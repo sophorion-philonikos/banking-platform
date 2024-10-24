@@ -1,11 +1,15 @@
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+import React from 'react'
+
+const Home = () => {
   return (
-    <main>
-      {children}
-    </main>
-  );
+    <section className="home">
+      <div className="home-content">
+        <header className="home-header">
+          Welcome, Sophorion. This is layout.tsx within sign-up subfolder.
+        </header>
+      </div>
+    </section>
+  )
 }
+
+export default Home
